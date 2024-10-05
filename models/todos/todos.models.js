@@ -1,5 +1,5 @@
 import mongoose from "mongoose"
 
-const todosSchema = new mongoose.Schema({})
+const todoSchema = new mongoose.Schema({}, {timestamps: true})
 
-export const Todos = mongoose.models("Todos", todosSchema)
+export const Todo = mongoose.models("Todos", todoSchema)
